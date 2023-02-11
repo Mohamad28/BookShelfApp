@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="head_bar">
+    <h1 class="head_bar__title">Bookshelf Apps</h1>
+  </header>
+  <br>
+  <main>
+    <div class="container-main">
+      <section class="input_section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" placeholder="ex : Harry Potter and the Philosopher" maxlength="29" required>
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" placeholder="ex : J.K Rowling" maxlength="29" required>
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" min="1999" value="2023" required>
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox">
+          </div>
+          <button id="bookSubmit" type="submit">Masukkan buku ke rak <span>Belum selesai
+            dibaca</span></button>
+        </form>
+      </section>
+
+      <section class="hero">
+        <img src="assets/hero.png" alt="hero">
+      </section>
+
+      <section class="search_section">
+        <div class="searchCard">
+          <div class="search" id="search">
+              <div class="search-box shadow">
+                  <input id="search-txt" class="search-txt" type="text" name=""
+                      placeholder="Cari judul buku disini..">
+                  <button id="searchSubmit" type="submit">
+                      <b>cari</b> 
+                  </button>
+              </div>
+              <div class="BookCard">
+              </div>
+          </div>
+      </div>
+      </section>
+
+      <section class="book_shelf" id="uncomplete">
+        <h2>Belum selesai dibaca</h2>
+
+        <div id="incompleteBookshelfList" class="book_list">
+        </div>
+      </section>
+
+      <section class="book_shelf" id="complete">
+        <h2>Selesai dibaca</h2>
+
+        <div id="completeBookshelfList" class="book_list">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&#169;Mohamad Albar</p>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

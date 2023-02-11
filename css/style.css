@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* icon-button */
+.check-button {
+    width: 30px;
+    height: 30px;
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 30px;
+    height: 30px;
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button {
+    width: 30px;
+    height: 30px;
+
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    margin-left: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+/* end icon button */
+
+* {
+    box-sizing: border-box;
+}
+/* head bar Bookshelf app */
+.head_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+header .head_bar__title {
+    color: #006AFF;
+
+}
+/* end of head bar Bookshelf app */
+main {
+    display: flex;
+    padding: 70px;
+}
+
+/* content main */
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+}
+
+.input_section {
+    width: 380px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #b7edffa8;
+}
+
+.input_section h2 {
+    color: #006AFF;
+}
+
+.input_section>form>.input>input {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    font-family: 'Poppins';
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    outline: none;
+}
+
+.input_section button {
+    width: 350px;
+    background-color: #006AFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+    margin: 2px auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* search section*/
+.searchCard {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #b7edffa8;
+    margin-right: 10px;
+    padding: 10px;
+
+}
+
+.search-box > input {
+    height: 30px;
+    width: 230px;
+    border-radius: 9px 0 0 9px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.searchCard #searchSubmit{
+    height: 30px;
+    background-color: #006AFF;
+    border-radius: 0 9px 9px 0;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.BookCard .item{
+    width: 320px;
+    background-color: #fff;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.BookCard .inner {
+    padding: 2px;
+    line-height: 5px;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.complete{
+    color: #fff;
+    width: 100px;
+    background-color: rgb(66, 163, 66);
+}
+
+.incomplete{
+    color: #fff;
+    width: 130px;
+    background-color: #F4D03F;
+}
+
+
+/* read or not read section*/
+
+.book_shelf h2 {
+    color: #006AFF;
+}
+
+#complete{
+    width: 330px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #b7edffa8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#uncomplete{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b7edffa8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.item{
+    float: left;
+    width: 320px;
+    background-color: #fff;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.inner {
+    padding: 2px;
+    line-height: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #006AFF;
+    color: #fff;
+ }
+
+
+ /* responsive design */
+
+ @media screen and (max-width: 1140px) {
+    main {
+        width: 100%;
+    }
+
+    .container-main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .hero {
+        display: none;
+    }
+ }
+
+
+ @media screen and (max-width: 760px) {
+    main {
+        width: 100%;
+    }
+
+    .container-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero {
+        display: none;
+    }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    main {
+        width: 100%;
+        display: flex;
+    }
+
+    .head_bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .container-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input_section {
+        width: 320px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #b7edffa8;
+    }
+
+    .input_section>form>.input>input {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Poppins';
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        outline: none;
+    }
+
+    .input_section button {
+        width: 250px;
+        background-color: #006AFF;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px;
+        margin: 2px auto;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #complete{
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #b7edffa8;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    #uncomplete{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        background-color: #b7edffa8;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .item{
+        float: left;
+        width: 320px;
+        background-color: #fff;
+        margin: 5px auto;
+        border-radius: 10px;
+    }
+    
+    .inner {
+        padding: 2px;
+        line-height: 5px;
+    }
+
+    .searchCard {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #b7edffa8;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+ }
