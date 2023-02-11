@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     submitForm.addEventListener('submit', function (event) {
         event.preventDefault();
         addBook();
+        submitForm.reset();
         swal.fire("Berhasil", "data berhasil di masukan", "success");
     });
 
